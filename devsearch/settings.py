@@ -124,13 +124,25 @@ WSGI_APPLICATION = 'devsearch.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME':'DevvSearch',
+#         'USER':os.environ.get('DB_USER'),
+#         'PASSWORD':os.environ.get('DB_PASS'),
+#         'HOST':os.environ.get('DB_HOST'),
+#         'PORT':'5432',
+#     }
+# }
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME':'DevvSearch',
-        'USER':os.environ.get('DB_USER'),
-        'PASSWORD':os.environ.get('DB_PASS'),
-        'HOST':os.environ.get('DB_HOST'),
+        'NAME':'django',
+        'USER':'django',
+        'PASSWORD':'07066609555Otu..$$',
+        'HOST':'django.cfuimku8qwdg.us-east-1.rds.amazonaws.com',
         'PORT':'5432',
     }
 }
